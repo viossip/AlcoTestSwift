@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HighScoreViewController.init(coder:):HighScoreViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DatabaseReference">
+            </PersistentString>
+            <PersistentString
+               value = "databaseRefer">
+            </PersistentString>
+            <PersistentString
+               value = "databaseHandle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

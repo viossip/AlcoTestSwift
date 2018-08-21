@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TGCameraViewController">
+            <connections>
+                <outlet property="captureView" destination="dIq-rQ-gzr" id="F4T-QP-lPu"/>
+                <outlet property="progressBarRoundedFat" destination="9o8-b3-WrL" id="5Oa-Yu-jB7"/>
+                <outlet property="timerExample7" destination="E9d-o1-jvZ" id="tiy-NA-6OK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwEffect" destination="TTe-jN-AMa" id="AvE-Be-aKW"/>
+                <outlet property="vwScopr" destination="LZ3-S7-T3v" id="1YD-gJ-IB4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="820"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIq-rQ-gzr" userLabel="Capture View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="820"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZ3-S7-T3v" userLabel="vwScope">
+                            <rect key="frame" x="200" y="310" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="86Z-Jc-9Fw"/>
+                                <constraint firstAttribute="width" constant="200" id="jEa-e1-w7y"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal_whisky.png" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-jN-AMa">
+                            <rect key="frame" x="200" y="310" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="3LS-f8-eS0"/>
+                                <constraint firstAttribute="height" constant="200" id="mbk-4J-gxH"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o8-b3-WrL" customClass="YLProgressBar">
+                            <rect key="frame" x="30.5" y="760" width="540" height="30"/>
+                            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.024750971909999999" green="0.1228471756" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="lqB-e4-8kY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
+                                    <color key="value" red="0.2196078431372549" green="0.41960784313725491" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideGloss" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                    <real key="value" value="0.90000000000000002"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="progressStretch" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="stripesAnimated" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideStripes" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideTrack" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="uniformTintColor" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9d-o1-jvZ" userLabel="Timer">
+                            <rect key="frame" x="152" y="685" width="296" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="CKb-Li-8lQ"/>
+                                <constraint firstAttribute="width" constant="296" id="VDm-eA-ayT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="9o8-b3-WrL" firstAttribute="centerX" secondItem="dIq-rQ-gzr" secondAttribute="centerX" id="0OP-ZG-LkC"/>
+                        <constraint firstItem="9o8-b3-WrL" firstAttribute="width" secondItem="dIq-rQ-gzr" secondAttribute="width" multiplier="0.9" id="IPa-rT-6IZ"/>
+                        <constraint firstItem="TTe-jN-AMa" firstAttribute="centerX" secondItem="dIq-rQ-gzr" secondAttribute="centerX" id="SE4-Ne-GrP"/>
+                        <constraint firstItem="9o8-b3-WrL" firstAttribute="top" secondItem="E9d-o1-jvZ" secondAttribute="bottom" constant="30" id="YWe-qR-Vxb"/>
+                        <constraint firstItem="LZ3-S7-T3v" firstAttribute="centerY" secondItem="dIq-rQ-gzr" secondAttribute="centerY" id="hae-Wr-Wd0"/>
+                        <constraint firstItem="LZ3-S7-T3v" firstAttribute="centerX" secondItem="dIq-rQ-gzr" secondAttribute="centerX" id="kp5-X0-Bw4"/>
+                        <constraint firstItem="TTe-jN-AMa" firstAttribute="centerY" secondItem="dIq-rQ-gzr" secondAttribute="centerY" id="r1c-bc-4ck"/>
+                        <constraint firstAttribute="width" secondItem="dIq-rQ-gzr" secondAttribute="height" multiplier="1:1" priority="999" id="rY0-Cn-lea"/>
+                        <constraint firstAttribute="bottom" secondItem="9o8-b3-WrL" secondAttribute="bottom" constant="30" id="sTK-8s-6Ae"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.98755216598510742" green="0.26285848021507263" blue="0.032961577177047729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dIq-rQ-gzr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ETP-JT-qoT"/>
+                <constraint firstItem="dIq-rQ-gzr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="FrO-TZ-pBc"/>
+                <constraint firstItem="dIq-rQ-gzr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="NjO-TI-jaM"/>
+                <constraint firstItem="E9d-o1-jvZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qwu-bX-lLe"/>
+                <constraint firstItem="dIq-rQ-gzr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W2I-t2-sCo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="833" y="280"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="normal_whisky.png" width="500" height="500"/>
+    </resources>
+</document>

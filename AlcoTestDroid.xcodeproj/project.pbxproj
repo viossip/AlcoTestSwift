@@ -3,17 +3,72 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		299C792E2E8179CB53787F47 /* Pods_AlcoTestDroid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E342E2C81BCCB75F2435EE /* Pods_AlcoTestDroid.framework */; };
+		841DFB1C210A4C3800F7E01A /* CoreMotion-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841DFB1B210A4C3700F7E01A /* CoreMotion-Info.plist */; };
+		8423F32F2104E9050013F49B /* UIImage+CameraFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F2F52104E9050013F49B /* UIImage+CameraFilters.m */; };
+		8423F3302104E9050013F49B /* TGCameraAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F2F82104E9050013F49B /* TGCameraAuthorizationViewController.m */; };
+		8423F3312104E9050013F49B /* TGCameraNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F2FA2104E9050013F49B /* TGCameraNavigationController.m */; };
+		8423F3322104E9050013F49B /* TGCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F2FC2104E9050013F49B /* TGCameraViewController.m */; };
+		8423F3332104E9050013F49B /* TGPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F2FE2104E9050013F49B /* TGPhotoViewController.m */; };
+		8423F3342104E9050013F49B /* TGAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3012104E9050013F49B /* TGAlbum.m */; };
+		8423F3352104E9050013F49B /* TGAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3032104E9050013F49B /* TGAssetsLibrary.m */; };
+		8423F3362104E9050013F49B /* TGCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3052104E9050013F49B /* TGCamera.m */; };
+		8423F3372104E9050013F49B /* TGCameraColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3072104E9050013F49B /* TGCameraColor.m */; };
+		8423F3382104E9050013F49B /* TGCameraFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3092104E9050013F49B /* TGCameraFlash.m */; };
+		8423F3392104E9050013F49B /* TGCameraFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F30B2104E9050013F49B /* TGCameraFocus.m */; };
+		8423F33A2104E9050013F49B /* TGCameraFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F30D2104E9050013F49B /* TGCameraFunctions.m */; };
+		8423F33B2104E9050013F49B /* TGCameraGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F30F2104E9050013F49B /* TGCameraGrid.m */; };
+		8423F33C2104E9050013F49B /* TGCameraShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3112104E9050013F49B /* TGCameraShot.m */; };
+		8423F33D2104E9050013F49B /* TGCameraToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3132104E9050013F49B /* TGCameraToggle.m */; };
+		8423F33E2104E9050013F49B /* TGAssetImageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3162104E9050013F49B /* TGAssetImageFile.m */; };
+		8423F33F2104E9050013F49B /* TGCameraFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3192104E9050013F49B /* TGCameraFilterView.m */; };
+		8423F3402104E9050013F49B /* TGCameraFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F31B2104E9050013F49B /* TGCameraFocusView.m */; };
+		8423F3412104E9050013F49B /* TGCameraGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F31D2104E9050013F49B /* TGCameraGridView.m */; };
+		8423F3422104E9050013F49B /* TGCameraSlideDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F31F2104E9050013F49B /* TGCameraSlideDownView.m */; };
+		8423F3432104E9050013F49B /* TGCameraSlideUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3212104E9050013F49B /* TGCameraSlideUpView.m */; };
+		8423F3442104E9050013F49B /* TGCameraSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3232104E9050013F49B /* TGCameraSlideView.m */; };
+		8423F3452104E9050013F49B /* TGTintedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3252104E9050013F49B /* TGTintedButton.m */; };
+		8423F3462104E9050013F49B /* TGTintedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423F3272104E9050013F49B /* TGTintedLabel.m */; };
+		8423F3482104E9050013F49B /* TGCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423F32B2104E9050013F49B /* TGCameraViewController.xib */; };
+		8423F3492104E9050013F49B /* TGPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423F32D2104E9050013F49B /* TGPhotoViewController.xib */; };
+		842980FF20FFCD5900F4D9B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842980FE20FFCD5900F4D9B3 /* MainViewController.swift */; };
+		842981012100220B00F4D9B3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981002100220B00F4D9B3 /* GameViewController.swift */; };
+		842981032100243600F4D9B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981022100243600F4D9B3 /* LoginViewController.swift */; };
+		842981052100260700F4D9B3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981042100260700F4D9B3 /* AboutViewController.swift */; };
+		842981072100264200F4D9B3 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981062100264200F4D9B3 /* HelpViewController.swift */; };
+		842981092100590E00F4D9B3 /* SimpleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981082100590E00F4D9B3 /* SimpleGameViewController.swift */; };
+		8432687F21104D3F006224E5 /* HighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432687E21104D3F006224E5 /* HighpassFilter.m */; };
+		8432688221107883006224E5 /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432688021107883006224E5 /* GradientProgressView.m */; };
+		843268872110A829006224E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843268842110A829006224E5 /* Info.plist */; };
+		843268882110A829006224E5 /* YLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 843268862110A829006224E5 /* YLProgressBar.m */; };
+		844BEE43212AAC9100D123C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844BEE42212AAC9100D123C4 /* GoogleService-Info.plist */; };
 		8478275D20FEEBA400D1ED2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478275C20FEEBA400D1ED2D /* AppDelegate.swift */; };
-		8478275F20FEEBA400D1ED2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478275E20FEEBA400D1ED2D /* ViewController.swift */; };
 		8478276220FEEBA400D1ED2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8478276020FEEBA400D1ED2D /* Main.storyboard */; };
 		8478276420FEEBA600D1ED2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8478276320FEEBA600D1ED2D /* Assets.xcassets */; };
 		8478276720FEEBA600D1ED2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8478276520FEEBA600D1ED2D /* LaunchScreen.storyboard */; };
 		8478277220FEEBA600D1ED2D /* AlcoTestDroidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478277120FEEBA600D1ED2D /* AlcoTestDroidTests.swift */; };
 		8478277D20FEEBA600D1ED2D /* AlcoTestDroidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478277C20FEEBA600D1ED2D /* AlcoTestDroidUITests.swift */; };
+		8488FA64210C236100AD5252 /* left_whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA5C210C236100AD5252 /* left_whisky.png */; };
+		8488FA65210C236100AD5252 /* alcoTest_descrip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA5D210C236100AD5252 /* alcoTest_descrip.jpg */; };
+		8488FA66210C236100AD5252 /* alcoTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA5E210C236100AD5252 /* alcoTest.jpg */; };
+		8488FA67210C236100AD5252 /* alcoTest_login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA5F210C236100AD5252 /* alcoTest_login.jpg */; };
+		8488FA68210C236100AD5252 /* right_whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA60210C236100AD5252 /* right_whisky.png */; };
+		8488FA69210C236100AD5252 /* alcoTest_game.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA61210C236100AD5252 /* alcoTest_game.png */; };
+		8488FA6A210C236100AD5252 /* up_whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA62210C236100AD5252 /* up_whisky.png */; };
+		8488FA6B210C236100AD5252 /* normal_whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA63210C236100AD5252 /* normal_whisky.png */; };
+		8488FA6D210C298700AD5252 /* down_whisky.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA6C210C298700AD5252 /* down_whisky.png */; };
+		8488FA71210C8D1C00AD5252 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488FA70210C8D1C00AD5252 /* GameResultViewController.swift */; };
+		8488FA73210C926700AD5252 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488FA72210C926700AD5252 /* rain.png */; };
+		84A0A91B210E194900CDFF8E /* you_win.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0A919210E194800CDFF8E /* you_win.png */; };
+		84A0A91C210E194900CDFF8E /* looser.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0A91A210E194900CDFF8E /* looser.png */; };
+		84A0A91F210E32B200CDFF8E /* ToastHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0A91E210E32B200CDFF8E /* ToastHelper.swift */; };
+		84A920052109256000CCCB02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A920022109256000CCCB02 /* Info.plist */; };
+		84A920062109256000CCCB02 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A920042109256000CCCB02 /* MZTimerLabel.m */; };
+		84EBEAC3210796FB00A47F5B /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +89,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02110D5D8C470285DA071477 /* Pods-AlcoTestDroid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTestDroid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid.debug.xcconfig"; sourceTree = "<group>"; };
+		841DFB18210A4C3700F7E01A /* CMDeviceMotionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDeviceMotionDemo.h; sourceTree = "<group>"; };
+		841DFB19210A4C3700F7E01A /* CMLocationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLocationDemo.h; sourceTree = "<group>"; };
+		841DFB1A210A4C3700F7E01A /* CoreMotion-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreMotion-Prefix.pch"; sourceTree = "<group>"; };
+		841DFB1B210A4C3700F7E01A /* CoreMotion-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CoreMotion-Info.plist"; sourceTree = "<group>"; };
+		8423F2B32104DABC0013F49B /* AlcoTestDroid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlcoTestDroid-Bridging-Header.h"; sourceTree = "<group>"; };
+		8423F2F42104E9050013F49B /* UIImage+CameraFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CameraFilters.h"; sourceTree = "<group>"; };
+		8423F2F52104E9050013F49B /* UIImage+CameraFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CameraFilters.m"; sourceTree = "<group>"; };
+		8423F2F72104E9050013F49B /* TGCameraAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraAuthorizationViewController.h; sourceTree = "<group>"; };
+		8423F2F82104E9050013F49B /* TGCameraAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraAuthorizationViewController.m; sourceTree = "<group>"; };
+		8423F2F92104E9050013F49B /* TGCameraNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraNavigationController.h; sourceTree = "<group>"; };
+		8423F2FA2104E9050013F49B /* TGCameraNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraNavigationController.m; sourceTree = "<group>"; };
+		8423F2FB2104E9050013F49B /* TGCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraViewController.h; sourceTree = "<group>"; };
+		8423F2FC2104E9050013F49B /* TGCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraViewController.m; sourceTree = "<group>"; };
+		8423F2FD2104E9050013F49B /* TGPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPhotoViewController.h; sourceTree = "<group>"; };
+		8423F2FE2104E9050013F49B /* TGPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPhotoViewController.m; sourceTree = "<group>"; };
+		8423F3002104E9050013F49B /* TGAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAlbum.h; sourceTree = "<group>"; };
+		8423F3012104E9050013F49B /* TGAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGAlbum.m; sourceTree = "<group>"; };
+		8423F3022104E9050013F49B /* TGAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAssetsLibrary.h; sourceTree = "<group>"; };
+		8423F3032104E9050013F49B /* TGAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGAssetsLibrary.m; sourceTree = "<group>"; };
+		8423F3042104E9050013F49B /* TGCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCamera.h; sourceTree = "<group>"; };
+		8423F3052104E9050013F49B /* TGCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCamera.m; sourceTree = "<group>"; };
+		8423F3062104E9050013F49B /* TGCameraColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraColor.h; sourceTree = "<group>"; };
+		8423F3072104E9050013F49B /* TGCameraColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraColor.m; sourceTree = "<group>"; };
+		8423F3082104E9050013F49B /* TGCameraFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraFlash.h; sourceTree = "<group>"; };
+		8423F3092104E9050013F49B /* TGCameraFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraFlash.m; sourceTree = "<group>"; };
+		8423F30A2104E9050013F49B /* TGCameraFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraFocus.h; sourceTree = "<group>"; };
+		8423F30B2104E9050013F49B /* TGCameraFocus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraFocus.m; sourceTree = "<group>"; };
+		8423F30C2104E9050013F49B /* TGCameraFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraFunctions.h; sourceTree = "<group>"; };
+		8423F30D2104E9050013F49B /* TGCameraFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraFunctions.m; sourceTree = "<group>"; };
+		8423F30E2104E9050013F49B /* TGCameraGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraGrid.h; sourceTree = "<group>"; };
+		8423F30F2104E9050013F49B /* TGCameraGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraGrid.m; sourceTree = "<group>"; };
+		8423F3102104E9050013F49B /* TGCameraShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraShot.h; sourceTree = "<group>"; };
+		8423F3112104E9050013F49B /* TGCameraShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraShot.m; sourceTree = "<group>"; };
+		8423F3122104E9050013F49B /* TGCameraToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraToggle.h; sourceTree = "<group>"; };
+		8423F3132104E9050013F49B /* TGCameraToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraToggle.m; sourceTree = "<group>"; };
+		8423F3152104E9050013F49B /* TGAssetImageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGAssetImageFile.h; sourceTree = "<group>"; };
+		8423F3162104E9050013F49B /* TGAssetImageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGAssetImageFile.m; sourceTree = "<group>"; };
+		8423F3182104E9050013F49B /* TGCameraFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraFilterView.h; sourceTree = "<group>"; };
+		8423F3192104E9050013F49B /* TGCameraFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraFilterView.m; sourceTree = "<group>"; };
+		8423F31A2104E9050013F49B /* TGCameraFocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraFocusView.h; sourceTree = "<group>"; };
+		8423F31B2104E9050013F49B /* TGCameraFocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraFocusView.m; sourceTree = "<group>"; };
+		8423F31C2104E9050013F49B /* TGCameraGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraGridView.h; sourceTree = "<group>"; };
+		8423F31D2104E9050013F49B /* TGCameraGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraGridView.m; sourceTree = "<group>"; };
+		8423F31E2104E9050013F49B /* TGCameraSlideDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraSlideDownView.h; sourceTree = "<group>"; };
+		8423F31F2104E9050013F49B /* TGCameraSlideDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraSlideDownView.m; sourceTree = "<group>"; };
+		8423F3202104E9050013F49B /* TGCameraSlideUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraSlideUpView.h; sourceTree = "<group>"; };
+		8423F3212104E9050013F49B /* TGCameraSlideUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraSlideUpView.m; sourceTree = "<group>"; };
+		8423F3222104E9050013F49B /* TGCameraSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGCameraSlideView.h; sourceTree = "<group>"; };
+		8423F3232104E9050013F49B /* TGCameraSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGCameraSlideView.m; sourceTree = "<group>"; };
+		8423F3242104E9050013F49B /* TGTintedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTintedButton.h; sourceTree = "<group>"; };
+		8423F3252104E9050013F49B /* TGTintedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTintedButton.m; sourceTree = "<group>"; };
+		8423F3262104E9050013F49B /* TGTintedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTintedLabel.h; sourceTree = "<group>"; };
+		8423F3272104E9050013F49B /* TGTintedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTintedLabel.m; sourceTree = "<group>"; };
+		8423F32C2104E9050013F49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TGCameraViewController.xib; sourceTree = "<group>"; };
+		8423F32E2104E9050013F49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TGPhotoViewController.xib; sourceTree = "<group>"; };
+		842980FE20FFCD5900F4D9B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		842981002100220B00F4D9B3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		842981022100243600F4D9B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		842981042100260700F4D9B3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		842981062100264200F4D9B3 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		842981082100590E00F4D9B3 /* SimpleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGameViewController.swift; sourceTree = "<group>"; };
+		8432687C21103E2D006224E5 /* HighpassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighpassFilter.h; sourceTree = "<group>"; };
+		8432687D21103FEF006224E5 /* GraphVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphVC.h; sourceTree = "<group>"; };
+		8432687E21104D3F006224E5 /* HighpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighpassFilter.m; sourceTree = "<group>"; };
+		8432688021107883006224E5 /* GradientProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientProgressView.m; sourceTree = "<group>"; };
+		8432688121107883006224E5 /* GradientProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientProgressView.h; sourceTree = "<group>"; };
+		843268842110A829006224E5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843268852110A829006224E5 /* YLProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLProgressBar.h; sourceTree = "<group>"; };
+		843268862110A829006224E5 /* YLProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLProgressBar.m; sourceTree = "<group>"; };
+		844BEE42212AAC9100D123C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8478275920FEEBA400D1ED2D /* AlcoTestDroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoTestDroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8478275C20FEEBA400D1ED2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8478275E20FEEBA400D1ED2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8478276120FEEBA400D1ED2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8478276320FEEBA600D1ED2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8478276620FEEBA600D1ED2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +172,28 @@
 		8478277820FEEBA600D1ED2D /* AlcoTestDroidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoTestDroidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8478277C20FEEBA600D1ED2D /* AlcoTestDroidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoTestDroidUITests.swift; sourceTree = "<group>"; };
 		8478277E20FEEBA600D1ED2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8488FA5C210C236100AD5252 /* left_whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_whisky.png; sourceTree = "<group>"; };
+		8488FA5D210C236100AD5252 /* alcoTest_descrip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alcoTest_descrip.jpg; sourceTree = "<group>"; };
+		8488FA5E210C236100AD5252 /* alcoTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alcoTest.jpg; sourceTree = "<group>"; };
+		8488FA5F210C236100AD5252 /* alcoTest_login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alcoTest_login.jpg; sourceTree = "<group>"; };
+		8488FA60210C236100AD5252 /* right_whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_whisky.png; sourceTree = "<group>"; };
+		8488FA61210C236100AD5252 /* alcoTest_game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alcoTest_game.png; sourceTree = "<group>"; };
+		8488FA62210C236100AD5252 /* up_whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_whisky.png; sourceTree = "<group>"; };
+		8488FA63210C236100AD5252 /* normal_whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_whisky.png; sourceTree = "<group>"; };
+		8488FA6C210C298700AD5252 /* down_whisky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_whisky.png; sourceTree = "<group>"; };
+		8488FA6E210C738800AD5252 /* MZTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTLAppDelegate.h; sourceTree = "<group>"; };
+		8488FA6F210C738900AD5252 /* MZTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTLViewController.h; sourceTree = "<group>"; };
+		8488FA70210C8D1C00AD5252 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		8488FA72210C926700AD5252 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		84A0A919210E194800CDFF8E /* you_win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you_win.png; sourceTree = "<group>"; };
+		84A0A91A210E194900CDFF8E /* looser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = looser.png; sourceTree = "<group>"; };
+		84A0A91E210E32B200CDFF8E /* ToastHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
+		84A920022109256000CCCB02 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A920032109256000CCCB02 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		84A920042109256000CCCB02 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
+		B9E342E2C81BCCB75F2435EE /* Pods_AlcoTestDroid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTestDroid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF29DC4F7940842979103D07 /* Pods-AlcoTestDroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTestDroid.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299C792E2E8179CB53787F47 /* Pods_AlcoTestDroid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +222,141 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0084D21F29EAEA5CC1AD7486 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02110D5D8C470285DA071477 /* Pods-AlcoTestDroid.debug.xcconfig */,
+				BF29DC4F7940842979103D07 /* Pods-AlcoTestDroid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8423F2F22104E9050013F49B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8423F2F32104E9050013F49B /* Category */,
+				8423F2F62104E9050013F49B /* Control */,
+				8423F2FF2104E9050013F49B /* Helper */,
+				8423F3142104E9050013F49B /* Model */,
+				8423F3172104E9050013F49B /* UI */,
+				8423F3282104E9050013F49B /* View */,
+			);
+			name = Camera;
+			path = Camera/TGCameraViewController/Camera;
+			sourceTree = "<group>";
+		};
+		8423F2F32104E9050013F49B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8423F2F42104E9050013F49B /* UIImage+CameraFilters.h */,
+				8423F2F52104E9050013F49B /* UIImage+CameraFilters.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8423F2F62104E9050013F49B /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				8423F2F72104E9050013F49B /* TGCameraAuthorizationViewController.h */,
+				8423F2F82104E9050013F49B /* TGCameraAuthorizationViewController.m */,
+				8423F2F92104E9050013F49B /* TGCameraNavigationController.h */,
+				8423F2FA2104E9050013F49B /* TGCameraNavigationController.m */,
+				8423F2FB2104E9050013F49B /* TGCameraViewController.h */,
+				8423F2FC2104E9050013F49B /* TGCameraViewController.m */,
+				8423F2FD2104E9050013F49B /* TGPhotoViewController.h */,
+				8423F2FE2104E9050013F49B /* TGPhotoViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		8423F2FF2104E9050013F49B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8423F3002104E9050013F49B /* TGAlbum.h */,
+				8423F3012104E9050013F49B /* TGAlbum.m */,
+				8423F3022104E9050013F49B /* TGAssetsLibrary.h */,
+				8423F3032104E9050013F49B /* TGAssetsLibrary.m */,
+				8423F3042104E9050013F49B /* TGCamera.h */,
+				8423F3052104E9050013F49B /* TGCamera.m */,
+				8423F3062104E9050013F49B /* TGCameraColor.h */,
+				8423F3072104E9050013F49B /* TGCameraColor.m */,
+				8423F3082104E9050013F49B /* TGCameraFlash.h */,
+				8423F3092104E9050013F49B /* TGCameraFlash.m */,
+				8423F30A2104E9050013F49B /* TGCameraFocus.h */,
+				8423F30B2104E9050013F49B /* TGCameraFocus.m */,
+				8423F30C2104E9050013F49B /* TGCameraFunctions.h */,
+				8423F30D2104E9050013F49B /* TGCameraFunctions.m */,
+				8423F30E2104E9050013F49B /* TGCameraGrid.h */,
+				8423F30F2104E9050013F49B /* TGCameraGrid.m */,
+				8423F3102104E9050013F49B /* TGCameraShot.h */,
+				8423F3112104E9050013F49B /* TGCameraShot.m */,
+				8423F3122104E9050013F49B /* TGCameraToggle.h */,
+				8423F3132104E9050013F49B /* TGCameraToggle.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8423F3142104E9050013F49B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8423F3152104E9050013F49B /* TGAssetImageFile.h */,
+				8423F3162104E9050013F49B /* TGAssetImageFile.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8423F3172104E9050013F49B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8423F3182104E9050013F49B /* TGCameraFilterView.h */,
+				8423F3192104E9050013F49B /* TGCameraFilterView.m */,
+				8423F31A2104E9050013F49B /* TGCameraFocusView.h */,
+				8423F31B2104E9050013F49B /* TGCameraFocusView.m */,
+				8423F31C2104E9050013F49B /* TGCameraGridView.h */,
+				8423F31D2104E9050013F49B /* TGCameraGridView.m */,
+				8423F31E2104E9050013F49B /* TGCameraSlideDownView.h */,
+				8423F31F2104E9050013F49B /* TGCameraSlideDownView.m */,
+				8423F3202104E9050013F49B /* TGCameraSlideUpView.h */,
+				8423F3212104E9050013F49B /* TGCameraSlideUpView.m */,
+				8423F3222104E9050013F49B /* TGCameraSlideView.h */,
+				8423F3232104E9050013F49B /* TGCameraSlideView.m */,
+				8423F3242104E9050013F49B /* TGTintedButton.h */,
+				8423F3252104E9050013F49B /* TGTintedButton.m */,
+				8423F3262104E9050013F49B /* TGTintedLabel.h */,
+				8423F3272104E9050013F49B /* TGTintedLabel.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8423F3282104E9050013F49B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8423F32B2104E9050013F49B /* TGCameraViewController.xib */,
+				8423F32D2104E9050013F49B /* TGPhotoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		843268832110A829006224E5 /* YLProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				843268842110A829006224E5 /* Info.plist */,
+				843268852110A829006224E5 /* YLProgressBar.h */,
+				843268862110A829006224E5 /* YLProgressBar.m */,
+			);
+			path = YLProgressBar;
+			sourceTree = "<group>";
+		};
 		8478275020FEEBA400D1ED2D = {
 			isa = PBXGroup;
 			children = (
+				8423F2B32104DABC0013F49B /* AlcoTestDroid-Bridging-Header.h */,
 				8478275B20FEEBA400D1ED2D /* AlcoTestDroid */,
 				8478277020FEEBA600D1ED2D /* AlcoTestDroidTests */,
 				8478277B20FEEBA600D1ED2D /* AlcoTestDroidUITests */,
 				8478275A20FEEBA400D1ED2D /* Products */,
+				0084D21F29EAEA5CC1AD7486 /* Pods */,
+				86981876B984EF42946A15BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +373,16 @@
 		8478275B20FEEBA400D1ED2D /* AlcoTestDroid */ = {
 			isa = PBXGroup;
 			children = (
+				8488FA5B210C233900AD5252 /* resource */,
+				84A91FFA210924B700CCCB02 /* Libraries */,
+				8423F2F22104E9050013F49B /* Camera */,
+				84F22F4720FFCA5F000EEB5A /* controller */,
 				8478275C20FEEBA400D1ED2D /* AppDelegate.swift */,
-				8478275E20FEEBA400D1ED2D /* ViewController.swift */,
 				8478276020FEEBA400D1ED2D /* Main.storyboard */,
 				8478276320FEEBA600D1ED2D /* Assets.xcassets */,
 				8478276520FEEBA600D1ED2D /* LaunchScreen.storyboard */,
 				8478276820FEEBA600D1ED2D /* Info.plist */,
+				844BEE42212AAC9100D123C4 /* GoogleService-Info.plist */,
 			);
 			path = AlcoTestDroid;
 			sourceTree = "<group>";
@@ -125,6 +405,87 @@
 			path = AlcoTestDroidUITests;
 			sourceTree = "<group>";
 		};
+		8488FA5B210C233900AD5252 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				84A0A91A210E194900CDFF8E /* looser.png */,
+				84A0A919210E194800CDFF8E /* you_win.png */,
+				8488FA72210C926700AD5252 /* rain.png */,
+				8488FA6C210C298700AD5252 /* down_whisky.png */,
+				8488FA5D210C236100AD5252 /* alcoTest_descrip.jpg */,
+				8488FA61210C236100AD5252 /* alcoTest_game.png */,
+				8488FA5F210C236100AD5252 /* alcoTest_login.jpg */,
+				8488FA5E210C236100AD5252 /* alcoTest.jpg */,
+				8488FA5C210C236100AD5252 /* left_whisky.png */,
+				8488FA63210C236100AD5252 /* normal_whisky.png */,
+				8488FA60210C236100AD5252 /* right_whisky.png */,
+				8488FA62210C236100AD5252 /* up_whisky.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		84A0A91D210E32B200CDFF8E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				84A0A91E210E32B200CDFF8E /* ToastHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		84A91FFA210924B700CCCB02 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				843268832110A829006224E5 /* YLProgressBar */,
+				8432688121107883006224E5 /* GradientProgressView.h */,
+				8432688021107883006224E5 /* GradientProgressView.m */,
+				8432687E21104D3F006224E5 /* HighpassFilter.m */,
+				8432687D21103FEF006224E5 /* GraphVC.h */,
+				8432687C21103E2D006224E5 /* HighpassFilter.h */,
+				84A0A91D210E32B200CDFF8E /* Helper */,
+				841DFB18210A4C3700F7E01A /* CMDeviceMotionDemo.h */,
+				841DFB19210A4C3700F7E01A /* CMLocationDemo.h */,
+				841DFB1B210A4C3700F7E01A /* CoreMotion-Info.plist */,
+				841DFB1A210A4C3700F7E01A /* CoreMotion-Prefix.pch */,
+				84A920012109256000CCCB02 /* MZTimerLabel */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		84A920012109256000CCCB02 /* MZTimerLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8488FA6E210C738800AD5252 /* MZTLAppDelegate.h */,
+				8488FA6F210C738900AD5252 /* MZTLViewController.h */,
+				84A920022109256000CCCB02 /* Info.plist */,
+				84A920032109256000CCCB02 /* MZTimerLabel.h */,
+				84A920042109256000CCCB02 /* MZTimerLabel.m */,
+			);
+			path = MZTimerLabel;
+			sourceTree = "<group>";
+		};
+		84F22F4720FFCA5F000EEB5A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				842980FE20FFCD5900F4D9B3 /* MainViewController.swift */,
+				842981002100220B00F4D9B3 /* GameViewController.swift */,
+				842981022100243600F4D9B3 /* LoginViewController.swift */,
+				842981042100260700F4D9B3 /* AboutViewController.swift */,
+				842981062100264200F4D9B3 /* HelpViewController.swift */,
+				842981082100590E00F4D9B3 /* SimpleGameViewController.swift */,
+				84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */,
+				8488FA70210C8D1C00AD5252 /* GameResultViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		86981876B984EF42946A15BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E342E2C81BCCB75F2435EE /* Pods_AlcoTestDroid.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +493,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8478278120FEEBA600D1ED2D /* Build configuration list for PBXNativeTarget "AlcoTestDroid" */;
 			buildPhases = (
+				515E45582DDCFA76A10C51E1 /* [CP] Check Pods Manifest.lock */,
 				8478275520FEEBA400D1ED2D /* Sources */,
 				8478275620FEEBA400D1ED2D /* Frameworks */,
 				8478275720FEEBA400D1ED2D /* Resources */,
+				736FFF7DAEE40304BE0CE16B /* [CP] Copy Pods Resources */,
+				F880399596C30CBC5D22D1BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,19 +557,22 @@
 				TargetAttributes = {
 					8478275820FEEBA400D1ED2D = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 					8478276C20FEEBA600D1ED2D = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 8478275820FEEBA400D1ED2D;
 					};
 					8478277720FEEBA600D1ED2D = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 8478275820FEEBA400D1ED2D;
 					};
 				};
 			};
 			buildConfigurationList = 8478275420FEEBA400D1ED2D /* Build configuration list for PBXProject "AlcoTestDroid" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,9 +596,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A0A91B210E194900CDFF8E /* you_win.png in Resources */,
+				8488FA67210C236100AD5252 /* alcoTest_login.jpg in Resources */,
 				8478276720FEEBA600D1ED2D /* LaunchScreen.storyboard in Resources */,
+				8488FA69210C236100AD5252 /* alcoTest_game.png in Resources */,
+				841DFB1C210A4C3800F7E01A /* CoreMotion-Info.plist in Resources */,
+				8488FA66210C236100AD5252 /* alcoTest.jpg in Resources */,
+				8423F3492104E9050013F49B /* TGPhotoViewController.xib in Resources */,
+				8488FA64210C236100AD5252 /* left_whisky.png in Resources */,
+				843268872110A829006224E5 /* Info.plist in Resources */,
 				8478276420FEEBA600D1ED2D /* Assets.xcassets in Resources */,
+				8488FA73210C926700AD5252 /* rain.png in Resources */,
+				8488FA6D210C298700AD5252 /* down_whisky.png in Resources */,
+				8488FA68210C236100AD5252 /* right_whisky.png in Resources */,
+				84A0A91C210E194900CDFF8E /* looser.png in Resources */,
+				8423F3482104E9050013F49B /* TGCameraViewController.xib in Resources */,
+				8488FA6B210C236100AD5252 /* normal_whisky.png in Resources */,
+				84A920052109256000CCCB02 /* Info.plist in Resources */,
+				8488FA65210C236100AD5252 /* alcoTest_descrip.jpg in Resources */,
 				8478276220FEEBA400D1ED2D /* Main.storyboard in Resources */,
+				8488FA6A210C236100AD5252 /* up_whisky.png in Resources */,
+				844BEE43212AAC9100D123C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +636,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		515E45582DDCFA76A10C51E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlcoTestDroid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		736FFF7DAEE40304BE0CE16B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F880399596C30CBC5D22D1BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8478275520FEEBA400D1ED2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8478275F20FEEBA400D1ED2D /* ViewController.swift in Sources */,
+				8423F3402104E9050013F49B /* TGCameraFocusView.m in Sources */,
+				8423F3392104E9050013F49B /* TGCameraFocus.m in Sources */,
+				84A0A91F210E32B200CDFF8E /* ToastHelper.swift in Sources */,
+				8423F3382104E9050013F49B /* TGCameraFlash.m in Sources */,
+				8423F32F2104E9050013F49B /* UIImage+CameraFilters.m in Sources */,
+				84A920062109256000CCCB02 /* MZTimerLabel.m in Sources */,
+				8488FA71210C8D1C00AD5252 /* GameResultViewController.swift in Sources */,
+				842981032100243600F4D9B3 /* LoginViewController.swift in Sources */,
+				8423F33F2104E9050013F49B /* TGCameraFilterView.m in Sources */,
+				8423F3332104E9050013F49B /* TGPhotoViewController.m in Sources */,
+				842981072100264200F4D9B3 /* HelpViewController.swift in Sources */,
+				8423F33C2104E9050013F49B /* TGCameraShot.m in Sources */,
 				8478275D20FEEBA400D1ED2D /* AppDelegate.swift in Sources */,
+				842981012100220B00F4D9B3 /* GameViewController.swift in Sources */,
+				8423F33A2104E9050013F49B /* TGCameraFunctions.m in Sources */,
+				8423F33E2104E9050013F49B /* TGAssetImageFile.m in Sources */,
+				8432688221107883006224E5 /* GradientProgressView.m in Sources */,
+				8432687F21104D3F006224E5 /* HighpassFilter.m in Sources */,
+				8423F3422104E9050013F49B /* TGCameraSlideDownView.m in Sources */,
+				842981052100260700F4D9B3 /* AboutViewController.swift in Sources */,
+				8423F3352104E9050013F49B /* TGAssetsLibrary.m in Sources */,
+				842980FF20FFCD5900F4D9B3 /* MainViewController.swift in Sources */,
+				8423F3412104E9050013F49B /* TGCameraGridView.m in Sources */,
+				843268882110A829006224E5 /* YLProgressBar.m in Sources */,
+				8423F3342104E9050013F49B /* TGAlbum.m in Sources */,
+				84EBEAC3210796FB00A47F5B /* HighScoreViewController.swift in Sources */,
+				8423F3442104E9050013F49B /* TGCameraSlideView.m in Sources */,
+				8423F3302104E9050013F49B /* TGCameraAuthorizationViewController.m in Sources */,
+				8423F3362104E9050013F49B /* TGCamera.m in Sources */,
+				8423F33B2104E9050013F49B /* TGCameraGrid.m in Sources */,
+				842981092100590E00F4D9B3 /* SimpleGameViewController.swift in Sources */,
+				8423F3452104E9050013F49B /* TGTintedButton.m in Sources */,
+				8423F3372104E9050013F49B /* TGCameraColor.m in Sources */,
+				8423F3322104E9050013F49B /* TGCameraViewController.m in Sources */,
+				8423F3432104E9050013F49B /* TGCameraSlideUpView.m in Sources */,
+				8423F3312104E9050013F49B /* TGCameraNavigationController.m in Sources */,
+				8423F33D2104E9050013F49B /* TGCameraToggle.m in Sources */,
+				8423F3462104E9050013F49B /* TGTintedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +781,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8423F32B2104E9050013F49B /* TGCameraViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8423F32C2104E9050013F49B /* Base */,
+			);
+			name = TGCameraViewController.xib;
+			sourceTree = "<group>";
+		};
+		8423F32D2104E9050013F49B /* TGPhotoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8423F32E2104E9050013F49B /* Base */,
+			);
+			name = TGPhotoViewController.xib;
+			sourceTree = "<group>";
+		};
 		8478276020FEEBA400D1ED2D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +867,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +921,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,17 +932,18 @@
 		};
 		8478278220FEEBA600D1ED2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02110D5D8C470285DA071477 /* Pods-AlcoTestDroid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S856U8URPN;
+				DEVELOPMENT_TEAM = 6LNKYSXBWX;
 				INFOPLIST_FILE = AlcoTestDroid/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroid;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroid12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlcoTestDroid-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,17 +951,18 @@
 		};
 		8478278320FEEBA600D1ED2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF29DC4F7940842979103D07 /* Pods-AlcoTestDroid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S856U8URPN;
+				DEVELOPMENT_TEAM = 6LNKYSXBWX;
 				INFOPLIST_FILE = AlcoTestDroid/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroid;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroid12345;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlcoTestDroid-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,11 +976,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S856U8URPN;
 				INFOPLIST_FILE = AlcoTestDroidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +993,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S856U8URPN;
 				INFOPLIST_FILE = AlcoTestDroidTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -511,11 +1009,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S856U8URPN;
 				INFOPLIST_FILE = AlcoTestDroidUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroidUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,11 +1025,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S856U8URPN;
 				INFOPLIST_FILE = AlcoTestDroidUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AlcoTestDroid.AlcoTestDroidUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

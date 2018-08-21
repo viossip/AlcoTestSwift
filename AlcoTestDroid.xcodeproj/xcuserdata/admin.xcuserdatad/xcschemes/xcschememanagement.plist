@@ -7,7 +7,25 @@
 		<key>AlcoTestDroid.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8478275820FEEBA400D1ED2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8478276C20FEEBA600D1ED2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8478277720FEEBA600D1ED2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
