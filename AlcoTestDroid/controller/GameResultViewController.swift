@@ -12,7 +12,6 @@ import Firebase
 
 class GameResultViewController: UIViewController, TGCameraDelegate {
     
-    
     private var rainLayer: CAEmitterLayer!
     private var gravityLayer: CAEmitterLayer!
     
@@ -28,8 +27,7 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
     let showEffect:Bool = false;
     
     var ref: DatabaseReference!
-    
-//    ref = Database.database().reference();
+    //    ref = Database.database().reference();
     var locationManager: CLLocationManager = CLLocationManager()
     
     @IBOutlet weak var m_btnAgain: UIView!
@@ -39,8 +37,6 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
     @IBOutlet weak var lb_again: UILabel!
     @IBOutlet weak var lb_return: UILabel!
     @IBOutlet weak var ScoreView: UILabel!
-    
-    
     
     //TGCamera Callback
     func getString(_ strResult: String!) {
@@ -55,8 +51,6 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
             self.lb_return.isHidden = false
             self.ScoreView.isHidden = false;
             
-            
-           
             if(self.state == "Success"){
                 self.setupGravityLayer()
                 if self.gravityLayer.birthRate == 0 {
@@ -66,8 +60,6 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
                     self.gravityLayer.birthRate = 0
                 }
                 self.m_ivWin.isHidden = false;
-                
-                
             }else if(self.state == "Loose"){
                 self.ScoreView.isHidden = true;
                 self.setupRainLayer()
@@ -82,6 +74,7 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
                     birthRateAnimation.toValue = 0
                     self.rainLayer.birthRate = 0
                 }
+                
                 self.rainLayer.add(birthRateAnimation, forKey: "birthRate")
                 DispatchQueue.main.asyncAfter(deadline: .now() + birthRateAnimation.duration) { [weak self] in
                     guard self != nil else { return }
@@ -110,27 +103,28 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
             let name = UserDefaults.standard.string(forKey: "name")
             var type = ""
             let uid = UserDefaults.standard.string(forKey: "uid")
+            
             print(self.game_Level)
             print(name)
+            
             if(self.game_Level == 1) {
                 type = "Simple"
             }else if(self.game_Level == 2) {
                 type = "Advance"
             }
+            
             if(self.state == "Success") {
                 self.ref = Database.database().reference()
                 self.ref.child("Players/gameType").childByAutoId().setValue(type)
                 self.ref.child("Players/name").childByAutoId().setValue(name)
                 self.ref.child("Players/time").childByAutoId().setValue(self.score)
             }
-            
         }
-        
     }
+    
     func getParam(_ param: String!) {
         level = param;
     }
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,8 +145,6 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
         self.addViewCornor(view: m_btnAgain)
         self.addViewCornor(view: m_btnReturn)
         
-        
-        
         let recogReturn = UITapGestureRecognizer(target: self, action:#selector(self.TapReturn))
         m_btnReturn.isUserInteractionEnabled = true
         m_btnReturn.addGestureRecognizer(recogReturn)
@@ -160,12 +152,9 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
         let recogAgain = UITapGestureRecognizer(target: self, action: #selector(TapAgain))
         m_btnAgain.isUserInteractionEnabled = true
         m_btnAgain.addGestureRecognizer(recogAgain)
-    
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-    
-    }
+    override func viewDidAppear(_ animated: Bool) { }
     
     override func viewDidLayoutSubviews() {
         
@@ -196,10 +185,8 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
     private func setupRainLayer() {
         if (state == "Loose") {
             rainLayer = CAEmitterLayer()

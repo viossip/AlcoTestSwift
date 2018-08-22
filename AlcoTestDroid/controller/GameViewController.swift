@@ -11,8 +11,8 @@ import CoreMotion
 class GameViewController: UIViewController{
     
     var clickable = false
-    let stableY:Double = 0.1
-    let stableX:Double = 0.1
+    let stableY:Double = 0.03
+    let stableX:Double = 0.03
     
     @IBOutlet weak var m_btnSimple: UIView!
     @IBOutlet weak var m_btnAdvance: UIView!
@@ -27,11 +27,6 @@ class GameViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         //-------set the view properties
-        
-        self.addBorderLine(view: m_btnSimple)
-        self.addBorderLine(view: m_btnAdvance)
-        self.addBorderLine(view: m_btnTraining)
-        self.addBorderLine(view: m_btnReturn)
         
         self.addViewCornor(view: m_btnSimple)
         self.addViewCornor(view: m_btnAdvance)
@@ -55,8 +50,6 @@ class GameViewController: UIViewController{
         let recogReturn = UITapGestureRecognizer(target: self, action: #selector(self.tapReturn))
         m_btnReturn.isUserInteractionEnabled = true
         m_btnReturn.addGestureRecognizer(recogReturn)
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,24 +57,22 @@ class GameViewController: UIViewController{
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
             if let myData = data
             {
-                
-                
                 let y = myData.acceleration.y
                 let x = myData.acceleration.x
                 let z = myData.acceleration.z
     
                 let StateX:Bool = x <= self.stableX && x >= -self.stableX
                 let StateY:Bool = y <= self.stableY && y >= -self.stableY
-                let StateX_up:Bool = x >= self.stableX && x <= 0.1
-                let StateX_down:Bool = x >= -0.1 && x < -self.stableX
-                let StateY_left:Bool = y <= 0.1 && y > self.stableY
-                let StateY_right:Bool = y >= -0.1 && y < -self.stableY
-                let Loose:Bool = y > 0.1 || y < -0.1 || x > 0.1 || x < -0.1
+                let StateX_up:Bool = x >= self.stableX && x <= 0.06
+                let StateX_down:Bool = x >= -0.06 && x < -self.stableX
+                let StateY_left:Bool = y <= 0.06 && y > self.stableY
+                let StateY_right:Bool = y >= -0.06 && y < -self.stableY
+                let Loose:Bool = y > 0.1 || y < -0.06 || x > 0.06 || x < -0.06
                 let StateButton:Bool = StateY && StateX
                 
                 if( StateX && StateY){
-//                    print("Enable" , x , y ,z)
-                    if(self.m_btnSimple.backgroundColor == UIColor .red){
+//                  print("Enable" , x , y ,z)
+                    if(self.m_btnSimple.backgroundColor == UIColor.red){
                         self.clickable = false
                     }else{
                         self.clickable = true
@@ -94,7 +85,9 @@ class GameViewController: UIViewController{
                     self.lb_Simple.textColor = UIColor.black
                     self.lb_Advance.textColor = UIColor.black
                     self.lb_Training.textColor = UIColor.black
+                    
                 }else if(!StateX && !StateY){
+                    
                     self.lb_Simple.textColor = UIColor.white
                     self.lb_Advance.textColor = UIColor.white
                     self.lb_Training.textColor = UIColor.white
@@ -104,6 +97,7 @@ class GameViewController: UIViewController{
                     self.m_btnTraining.backgroundColor = UIColor.red
                     
                     self.clickable = false
+                    
                     if(StateX_up){
 //                        print("Move to Up")
                     }
@@ -126,7 +120,6 @@ class GameViewController: UIViewController{
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func addTextBorder (textField: UITextField){
@@ -144,11 +137,6 @@ class GameViewController: UIViewController{
         view.layer.cornerRadius = 6.0
     }
     
-    func addBorderLine(view: UIView) {
-        view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.white.cgColor
-    }
-    
     @objc func tapSimpleGame() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC") as! GameResultViewController
@@ -157,8 +145,8 @@ class GameViewController: UIViewController{
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")
         }
-        
     }
+    
     @objc func tapAdvaneGame() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC")as! GameResultViewController
@@ -168,6 +156,7 @@ class GameViewController: UIViewController{
             alertShow(string: "Please stay your Phone Horizontally!")
         }
     }
+    
     @objc func tapTraining() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC")as! GameResultViewController
@@ -177,13 +166,14 @@ class GameViewController: UIViewController{
             alertShow(string: "Please stay your Phone Horizontally!")
         }
     }
+    
     @objc func tapReturn() {
         self.dismiss(animated: false, completion: nil)
     }
+    
     func alertShow(string:String){
         let alert = UIAlertController(title: "Warnning!", message: string, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-
 }

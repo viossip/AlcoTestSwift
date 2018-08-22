@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    
     @IBOutlet weak var m_btnStart: UIView!
     @IBOutlet weak var m_btnScore: UIView!
     @IBOutlet weak var m_btnLogin: UIView!
@@ -78,6 +77,7 @@ class MainViewController: UIViewController {
     
     @objc func TapExit() {
         self.dismiss(animated: false , completion: nil)
+        exit(0);
     }
     
     @objc func TapAbout(){
@@ -88,20 +88,20 @@ class MainViewController: UIViewController {
     @objc func TapHelp() {
         let helpController = storyboard?.instantiateViewController(withIdentifier: "helpVC")as! HelpViewController
         present(helpController, animated: false, completion: nil)
-        print("click Help")
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
     
     func addTextBorder (textField: UITextField){
         let border = CALayer()
         let width = CGFloat(1.0)
+        
         border.borderColor = UIColor.gray.cgColor
         border.frame = CGRect(x:0, y:textField.frame.size.height - width,width: textField.frame.size.width, height: textField.frame.size.height)
         border.borderWidth = width
+        
         textField.layer.addSublayer(border)
         textField.layer.masksToBounds = true
     }
@@ -115,8 +115,4 @@ class MainViewController: UIViewController {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.white.cgColor
     }
-    
-
-
-
 }

@@ -10,17 +10,21 @@ import UIKit
 import Firebase
 
 class HighScoreViewController: UIViewController {
+    
     var databaseHandle: DatabaseHandle!
     var databaseRefer: DatabaseReference!
+    
     @IBOutlet weak var m_btnReturn: UIView!
     @IBOutlet weak var gameType: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var type: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let name  =  UserDefaults.standard.string(forKey: "name")
         self.name.text = name
+        
         databaseHandle = Database.database().reference().child("Players/gameType").observe(.childAdded, with: {(data) in
             let type: String = (data.value as? String)!
             self.type.text = type;

@@ -6,14 +6,12 @@
 //  Copyright © 2018 AlcoTestDroid. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 import AVFoundation
 class SimpleGameViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     func cameraDidCancel() {
@@ -32,13 +30,14 @@ class SimpleGameViewController: UIViewController{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     func cmeraWillTakePhoto(){
         print("cameraWillTakePhoto")
     }
+    
     func takePhotoTapped() {
 //        let navigationController = TGCameraNavigationController.new(with:self)
 //        present(navigationController!, animated: true, completion: nil)
     }
-}
+}*/

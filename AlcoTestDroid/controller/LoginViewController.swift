@@ -32,15 +32,12 @@ class LoginViewController: UIViewController {
 
     let defaults = UserDefaults.standard
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         m_btnRegister.isHidden = true
         lb_Register.isHidden = true
         tv_Username.isHidden = true
-        
-        // Do any additional setup after loading the view.
         
         self.addViewCornor(view: m_btnSignin)
         self.addViewCornor(view: m_btnSignOut)
@@ -55,8 +52,6 @@ class LoginViewController: UIViewController {
         tv_Email.textColor = UIColor.white
         tv_Password.textColor = UIColor.white
         tv_Username.textColor = UIColor.white
-        
-        
         
         self.addPlaceHolder(Name: "Email", textfield: tv_Email)
         self.addPlaceHolder(Name: "Password", textfield: tv_Password)
@@ -81,12 +76,10 @@ class LoginViewController: UIViewController {
         let recogRegister = UITapGestureRecognizer(target: self, action: #selector(self.TapReigster))
         m_btnRegister.isUserInteractionEnabled = true
         m_btnRegister.addGestureRecognizer(recogRegister)
-    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func addTextBorder (textField: UITextField){
@@ -153,7 +146,6 @@ class LoginViewController: UIViewController {
                                 }
                             }
                             UserDefaults.standard.set(self.strExpireDate, forKey: "expireDate")
-                        
                         }
                         self.dismiss(animated: false, completion: nil);
 //                        MBProgressHUD.hide(for: self.view, animated: false)
@@ -164,15 +156,12 @@ class LoginViewController: UIViewController {
                     UserDefaults.standard.set("name", forKey: email)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
-                    
-                    
-//                    MBProgressHUD.hide(for: self.view, animated: false)
+//                  MBProgressHUD.hide(for: self.view, animated: false)
                 }
-                
             }
-            
         }
     }
+    
     @objc func tapGetAccount() {
         
         m_btnRegister.isHidden = false
@@ -186,10 +175,8 @@ class LoginViewController: UIViewController {
         lb_sign.isHidden = true
         lb_Account.isHidden = true
         lb_signout.isHidden = true
-        
-        
-        
     }
+    
     @objc func TapReigster(){
         
         let email = tv_Email.text!
@@ -200,33 +187,24 @@ class LoginViewController: UIViewController {
 //            let hudWait = MBProgressHUD.showAdded(to: self.view, animated: true)
 //            hudWait.label.text = "Please Wait.."
             Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                
                 if error == nil {
                     print("You have successfully signed up")
                     let ref = Database.database().reference().child("Users/users").child(Auth.auth().currentUser!.uid)
-                    
                     ref.updateChildValues(["name": name])
                     ref.updateChildValues(["email":email])
                     ref.updateChildValues(["password":pass])
-                    
-                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
-                    
-                    
-                    
                     self.present(alertController, animated: true, completion: nil)
 //                    MBProgressHUD.hide(for: self.view, animated: false)
-                    
                 }
             }
-                
         }
-        
     }
+    
     @objc func tapSignOut() {
         dismiss(animated: false, completion: nil)
     }
@@ -268,7 +246,6 @@ class LoginViewController: UIViewController {
                 
                 return true
             }
-           
         }
         return false
     }
@@ -280,7 +257,6 @@ class LoginViewController: UIViewController {
     
     func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
