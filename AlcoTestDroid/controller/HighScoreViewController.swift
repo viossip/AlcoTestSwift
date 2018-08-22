@@ -14,6 +14,8 @@ class HighScoreViewController: UIViewController {
     var databaseHandle: DatabaseHandle!
     var databaseRefer: DatabaseReference!
     
+    var recordsToDisplay : [Highscore] = []
+    
     @IBOutlet weak var m_btnReturn: UIView!
     @IBOutlet weak var gameType: UILabel!
     @IBOutlet weak var name: UILabel!
@@ -25,7 +27,29 @@ class HighScoreViewController: UIViewController {
         let name  =  UserDefaults.standard.string(forKey: "name")
         self.name.text = name
         
-        databaseHandle = Database.database().reference().child("Players/gameType").observe(.childAdded, with: {(data) in
+        
+        Database.database().reference().child("Highscores").observe(.value, with: { (snapshot) in
+            
+            var highscores = snapshot.value as! [String:AnyObject]
+            let highscoresKeys = Array(highscores.keys)
+            
+            for highscoreKey in highscoresKeys  {
+                
+                guard let value = highscores[highscoreKey] as? [String:AnyObject]
+                else { continue }
+                
+                let user = value["user"] as? String
+                let type = value["type"] as? String
+                let score = value["score"] as? String
+                
+                self.recordsToDisplay.append(Highscore(user:user as! String, type:type as! String ,score:score as! String))
+            }
+            self.recordsToDisplay = self.recordsToDisplay.sorted(by: { $0.score < $1.score })
+        })
+        
+        
+        
+        /*databaseHandle = Database.database().reference().child("Players/gameType").observe(.childAdded, with: {(data) in
             let type: String = (data.value as? String)!
             self.type.text = type;
         })
@@ -34,7 +58,7 @@ class HighScoreViewController: UIViewController {
             let score: String = (data.value as? String)!
             self.score.text = score;
             let level:String = (data.value as? String)!
-        })
+        })*/
         
         self.addBorderLine(view: m_btnReturn)
         self.addViewCornor(view: m_btnReturn)

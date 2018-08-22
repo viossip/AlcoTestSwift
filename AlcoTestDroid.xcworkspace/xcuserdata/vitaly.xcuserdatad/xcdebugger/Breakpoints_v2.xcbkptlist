@@ -9,72 +9,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlcoTestDroid/controller/HighScoreViewController.swift"
-            timestampString = "556623655.5555969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AlcoTestDroid"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
-                  timestampString = "556567071.874012"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "926">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AlcoTestDroid"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
-                  timestampString = "556567071.877519"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlcoTestDroid/controller/GameViewController.swift"
-            timestampString = "556623655.555913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "tapSimpleGame()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AlcoTestDroid/controller/GameResultViewController.swift"
-            timestampString = "556623655.5569741"
+            timestampString = "556634861.03275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -89,24 +25,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlcoTestDroid/controller/GameResultViewController.swift"
-            timestampString = "556623655.557565"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "getScore(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AlcoTestDroid/controller/LoginViewController.swift"
-            timestampString = "556623655.557853"
+            timestampString = "556634861.03364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
@@ -122,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlcoTestDroid/controller/LoginViewController.swift"
-            timestampString = "556623655.5584199"
+            timestampString = "556634861.033906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
@@ -137,14 +57,142 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlcoTestDroid/controller/GameViewController.swift"
-            timestampString = "556623655.558689"
+            filePath = "AlcoTestDroid/controller/GameResultViewController.swift"
+            timestampString = "556634861.033982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "tapSimpleGame()"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "getScore(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlcoTestDroid/controller/HighScoreViewController.swift"
+            timestampString = "556634861.034313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlcoTestDroid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
+                  timestampString = "556634619.617878"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1552">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (AlcoTestDroid.Highscore, AlcoTestDroid.Highscore) -&gt; Swift.Bool in AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlcoTestDroid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
+                  timestampString = "556634619.620356"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlcoTestDroid/controller/HighScoreViewController.swift"
+            timestampString = "556634861.034838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlcoTestDroid/controller/HighScoreViewController.swift"
+            timestampString = "556634861.035087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlcoTestDroid/controller/HighScoreViewController.swift"
+            timestampString = "556634861.0353301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlcoTestDroid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
+                  timestampString = "556634861.36798"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "3764">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AlcoTestDroid.Highscore, AlcoTestDroid.Highscore) -&gt; Swift.Bool in closure #1 (__ObjC.DataSnapshot) -&gt; () in AlcoTestDroid.HighScoreViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AlcoTestDroid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vitaly/Documents/ios_course/AlcoTestDroid/AlcoTestDroid/controller/HighScoreViewController.swift"
+                  timestampString = "556634861.3707761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

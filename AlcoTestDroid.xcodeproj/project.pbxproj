@@ -68,6 +68,7 @@
 		84A920052109256000CCCB02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A920022109256000CCCB02 /* Info.plist */; };
 		84A920062109256000CCCB02 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A920042109256000CCCB02 /* MZTimerLabel.m */; };
 		84EBEAC3210796FB00A47F5B /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */; };
+		D8CAFCD0212D908D007FDDD2 /* Highscore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CAFCCF212D908D007FDDD2 /* Highscore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,7 @@
 		84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		B9E342E2C81BCCB75F2435EE /* Pods_AlcoTestDroid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoTestDroid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF29DC4F7940842979103D07 /* Pods-AlcoTestDroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoTestDroid.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlcoTestDroid/Pods-AlcoTestDroid.release.xcconfig"; sourceTree = "<group>"; };
+		D8CAFCCF212D908D007FDDD2 /* Highscore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +373,7 @@
 		8478275B20FEEBA400D1ED2D /* AlcoTestDroid */ = {
 			isa = PBXGroup;
 			children = (
+				D8CAFCCE212D9076007FDDD2 /* Entities */,
 				8488FA5B210C233900AD5252 /* resource */,
 				84A91FFA210924B700CCCB02 /* Libraries */,
 				8423F2F22104E9050013F49B /* Camera */,
@@ -481,6 +484,15 @@
 				B9E342E2C81BCCB75F2435EE /* Pods_AlcoTestDroid.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8CAFCCE212D9076007FDDD2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D8CAFCCF212D908D007FDDD2 /* Highscore.swift */,
+			);
+			name = Entities;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -713,6 +725,7 @@
 				84A920062109256000CCCB02 /* MZTimerLabel.m in Sources */,
 				8488FA71210C8D1C00AD5252 /* GameResultViewController.swift in Sources */,
 				842981032100243600F4D9B3 /* LoginViewController.swift in Sources */,
+				D8CAFCD0212D908D007FDDD2 /* Highscore.swift in Sources */,
 				8423F33F2104E9050013F49B /* TGCameraFilterView.m in Sources */,
 				8423F3332104E9050013F49B /* TGPhotoViewController.m in Sources */,
 				842981072100264200F4D9B3 /* HelpViewController.swift in Sources */,

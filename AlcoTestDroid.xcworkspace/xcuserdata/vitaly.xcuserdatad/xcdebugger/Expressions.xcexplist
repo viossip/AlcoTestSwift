@@ -3,24 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in GameResultViewController.getScore(_:):GameResultViewController.swift">
+         contextName = "HighScoreViewController.viewDidLoad():HighScoreViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "UserDefaults.standard.string(forKey: &quot;uid&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "UserDefaults.standard.string(forKey: &quot;email&quot;)">
-            </PersistentString>
-            <PersistentString
-               value = "self.game_Level">
-            </PersistentString>
-            <PersistentString
-               value = "UserDefaults.standard">
+               value = "self.recordsToDisplay">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GameResultViewController.gameLevel.setter:GameResultViewController.swift">
+         contextName = "closure #1 in HighScoreViewController.viewDidLoad():HighScoreViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "recordsToDisplay">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "HighScoreViewController.init(coder:):HighScoreViewController.swift">
@@ -35,6 +31,12 @@
                value = "databaseHandle">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameViewController.tapSimpleGame():GameViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in GameResultViewController.getScore(_:):GameResultViewController.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

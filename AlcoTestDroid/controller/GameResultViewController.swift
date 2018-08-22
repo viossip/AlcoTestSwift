@@ -124,6 +124,13 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
                 self.ref.child("Players/gameType").childByAutoId().setValue(type)
                 self.ref.child("Players/name").childByAutoId().setValue(name)
                 self.ref.child("Players/time").childByAutoId().setValue(self.score)
+                
+                let newHighscore = [
+                    "user": name,
+                    "type": type,
+                    "score": self.score,
+                ]
+                self.ref.child("Highscores").childByAutoId().setValue(newHighscore)                
             }
         }
     }
