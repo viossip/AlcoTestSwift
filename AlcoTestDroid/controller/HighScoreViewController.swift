@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class HighScoreViewController: UIViewController {
+class HighScoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var databaseHandle: DatabaseHandle!
     var databaseRefer: DatabaseReference!
@@ -22,10 +22,12 @@ class HighScoreViewController: UIViewController {
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var type: UILabel!
     
+    @IBOutlet weak var table1: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let name  =  UserDefaults.standard.string(forKey: "name")
-        self.name.text = name
+        //self.name.text = name
         
         
         Database.database().reference().child("Highscores").observe(.value, with: { (snapshot) in
@@ -44,7 +46,8 @@ class HighScoreViewController: UIViewController {
                 
                 self.recordsToDisplay.append(Highscore(user:user as! String, type:type as! String ,score:score as! String))
             }
-            self.recordsToDisplay = self.recordsToDisplay.sorted(by: { $0.score < $1.score })
+            self.recordsToDisplay = self.recordsToDisplay.sorted(by: { $0.score > $1.score })
+            self.table1.reloadData()
         })
         
         
@@ -66,6 +69,24 @@ class HighScoreViewController: UIViewController {
         let recogReturn = UITapGestureRecognizer(target: self, action: #selector(self.TapReturn))
         m_btnReturn.isUserInteractionEnabled = true
         m_btnReturn.addGestureRecognizer(recogReturn)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if recordsToDisplay.count < 10{
+            return recordsToDisplay.count
+        }
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style:UITableViewCellStyle.default,reuseIdentifier:"cell")
+        //cell.textLabel?.textColor = UIColor.white
+        //cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        
+        let formatted = String(format: "   %@ : %@     : %@",recordsToDisplay[indexPath.row].user, recordsToDisplay[indexPath.row].score, recordsToDisplay[indexPath.row].type)
+        cell.textLabel?.text = formatted
+        
+        return cell
     }
     
     @objc func TapReturn() {
