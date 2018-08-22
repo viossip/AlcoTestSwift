@@ -18,18 +18,12 @@ class HighScoreViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     @IBOutlet weak var m_btnReturn: UIView!
     @IBOutlet weak var gameType: UILabel!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var score: UILabel!
-    @IBOutlet weak var type: UILabel!
     
     @IBOutlet weak var table1: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let name  =  UserDefaults.standard.string(forKey: "name")
-        //self.name.text = name
-        
-        
+
         Database.database().reference().child("Highscores").observe(.value, with: { (snapshot) in
             
             var highscores = snapshot.value as! [String:AnyObject]
@@ -50,19 +44,6 @@ class HighScoreViewController: UIViewController,UITableViewDelegate,UITableViewD
             self.table1.reloadData()
         })
         
-        
-        
-        /*databaseHandle = Database.database().reference().child("Players/gameType").observe(.childAdded, with: {(data) in
-            let type: String = (data.value as? String)!
-            self.type.text = type;
-        })
-        
-        databaseHandle = Database.database().reference().child("Players/time").observe(.childAdded, with: {(data) in
-            let score: String = (data.value as? String)!
-            self.score.text = score;
-            let level:String = (data.value as? String)!
-        })*/
-        
         self.addBorderLine(view: m_btnReturn)
         self.addViewCornor(view: m_btnReturn)
         
@@ -80,6 +61,7 @@ class HighScoreViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style:UITableViewCellStyle.default,reuseIdentifier:"cell")
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
         //cell.textLabel?.textColor = UIColor.white
         //cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
         
