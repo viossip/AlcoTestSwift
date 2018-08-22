@@ -13,8 +13,6 @@ class HelpViewController: UIViewController {
     @IBOutlet weak var m_btnReturn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         self.addBorderLine(view: m_btnReturn)
         self.addViewCornor(view: m_btnReturn)

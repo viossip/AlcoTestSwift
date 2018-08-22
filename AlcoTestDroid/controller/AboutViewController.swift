@@ -13,8 +13,6 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var m_btnReturn: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         self.addBorderLine(view: m_btnReturn)
         self.addViewCornor(view: m_btnReturn)
@@ -26,11 +24,12 @@ class AboutViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     @objc func tapReturn() {
         self.dismiss(animated: false, completion: nil)
     }
+    
     func addTextBorder (textField: UITextField){
         let border = CALayer()
         let width = CGFloat(1.0)
@@ -50,5 +49,4 @@ class AboutViewController: UIViewController {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.white.cgColor
     }
-
 }

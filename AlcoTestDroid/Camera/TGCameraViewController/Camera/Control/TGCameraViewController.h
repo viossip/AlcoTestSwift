@@ -33,7 +33,6 @@
 #import "TGCameraNavigationController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
-
 @interface TGCameraViewController : UIViewController
 
 @property (weak) id<TGCameraDelegate> delegate;

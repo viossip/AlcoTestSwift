@@ -140,7 +140,8 @@ class GameViewController: UIViewController{
     @objc func tapSimpleGame() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC") as! GameResultViewController
-            resultVC.game_Level = 1;
+            //resultVC.game_Level = 1;
+            resultVC.gameLevel = 1
             present(resultVC, animated: false, completion: nil)
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")
@@ -150,7 +151,7 @@ class GameViewController: UIViewController{
     @objc func tapAdvaneGame() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC")as! GameResultViewController
-            resultVC.game_Level = 2;
+            resultVC.gameLevel = 2;
             present(resultVC, animated: false, completion: nil)
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")
@@ -160,7 +161,7 @@ class GameViewController: UIViewController{
     @objc func tapTraining() {
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC")as! GameResultViewController
-            resultVC.game_Level = 3;
+            resultVC.gameLevel = 3;
             present(resultVC, animated: false, completion: nil)
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")

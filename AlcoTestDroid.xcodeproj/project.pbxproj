@@ -40,7 +40,6 @@
 		842981032100243600F4D9B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981022100243600F4D9B3 /* LoginViewController.swift */; };
 		842981052100260700F4D9B3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981042100260700F4D9B3 /* AboutViewController.swift */; };
 		842981072100264200F4D9B3 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981062100264200F4D9B3 /* HelpViewController.swift */; };
-		842981092100590E00F4D9B3 /* SimpleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842981082100590E00F4D9B3 /* SimpleGameViewController.swift */; };
 		8432687F21104D3F006224E5 /* HighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432687E21104D3F006224E5 /* HighpassFilter.m */; };
 		8432688221107883006224E5 /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432688021107883006224E5 /* GradientProgressView.m */; };
 		843268872110A829006224E5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843268842110A829006224E5 /* Info.plist */; };
@@ -150,7 +149,6 @@
 		842981022100243600F4D9B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		842981042100260700F4D9B3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		842981062100264200F4D9B3 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		842981082100590E00F4D9B3 /* SimpleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGameViewController.swift; sourceTree = "<group>"; };
 		8432687C21103E2D006224E5 /* HighpassFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighpassFilter.h; sourceTree = "<group>"; };
 		8432687D21103FEF006224E5 /* GraphVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphVC.h; sourceTree = "<group>"; };
 		8432687E21104D3F006224E5 /* HighpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighpassFilter.m; sourceTree = "<group>"; };
@@ -471,7 +469,6 @@
 				842981022100243600F4D9B3 /* LoginViewController.swift */,
 				842981042100260700F4D9B3 /* AboutViewController.swift */,
 				842981062100264200F4D9B3 /* HelpViewController.swift */,
-				842981082100590E00F4D9B3 /* SimpleGameViewController.swift */,
 				84EBEAC2210796FB00A47F5B /* HighScoreViewController.swift */,
 				8488FA70210C8D1C00AD5252 /* GameResultViewController.swift */,
 			);
@@ -738,7 +735,6 @@
 				8423F3302104E9050013F49B /* TGCameraAuthorizationViewController.m in Sources */,
 				8423F3362104E9050013F49B /* TGCamera.m in Sources */,
 				8423F33B2104E9050013F49B /* TGCameraGrid.m in Sources */,
-				842981092100590E00F4D9B3 /* SimpleGameViewController.swift in Sources */,
 				8423F3452104E9050013F49B /* TGTintedButton.m in Sources */,
 				8423F3372104E9050013F49B /* TGCameraColor.m in Sources */,
 				8423F3322104E9050013F49B /* TGCameraViewController.m in Sources */,

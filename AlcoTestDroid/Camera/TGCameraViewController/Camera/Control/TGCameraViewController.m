@@ -105,7 +105,6 @@ static double timeInterval  =  1.0/kUpdateFrequency;
 - (IBAction)albumTapped;
 - (IBAction)toggleTapped;
 //- (IBAction)handleTapGesture:(UITapGestureRecognizer *)recognizer;
-
 - (void)deviceOrientationDidChangeNotification;
 - (AVCaptureVideoOrientation)videoOrientationForDeviceOrientation:(UIDeviceOrientation)deviceOrientation;
 - (void)viewWillDisappearWithCompletion:(void (^)(void))completion;
@@ -127,7 +126,6 @@ static double timeInterval  =  1.0/kUpdateFrequency;
 
 @implementation TGCameraViewController
 
-
 float X = 0;
 float Y = 0;
 float R = 40;
@@ -138,8 +136,6 @@ float RotX = 0.05;
 float RotY = 0.05;
 
 float degree = 20;
-
-
 
 bool StateX = false;
 bool StateY = false;
@@ -180,11 +176,11 @@ bool State_loose = false;
     State_RotY = pitch <= RotY && pitch >= - RotY;
     
     Horizon = StateX && StateX && State_RotX && State_RotY;
-    State_left = accX >= -0.02 && accX <= -StableX && roll <= -State_RotX;
-    State_right = accX <= 0.02 && accX >= StableX && roll >= State_RotX;
-    State_up = accY >= -0.02 && accY >= -StableY && pitch <= -State_RotY;
-    State_down = accY <= 0.02 && accY >= -StableY && pitch >= State_RotY;
-    State_loose = (accX > 0.06 && roll < -State_RotX*2) || (roll > State_RotX*2 && accX < -0.06) || (accY > 0.06 && pitch < -State_RotY*2)|| (pitch > State_RotY*2 && accY < -0.06);
+    State_left = accX >= -0.008 && accX <= -StableX && roll <= -State_RotX;
+    State_right = accX <= 0.008 && accX >= StableX && roll >= State_RotX;
+    State_up = accY >= -0.008 && accY >= -StableY && pitch <= -State_RotY;
+    State_down = accY <= 0.008 && accY >= -StableY && pitch >= State_RotY;
+    State_loose = (accX > 0.04 && roll < -State_RotX*2) || (roll > State_RotX*2 && accX < -0.04) || (accY > 0.04 && pitch < -State_RotY*2)|| (pitch > State_RotY*2 && accY < -0.04);
     
     newX = fmin(280, fmax(0, newX));
     newY = fmin(527, fmax(64, newY));
@@ -193,30 +189,28 @@ bool State_loose = false;
     if(Horizon){
         _vwEffect.image = [UIImage imageNamed:@"normal_whisky.png"];
     }
-    
     else if(!Horizon){
         if(State_left){
             _vwEffect.image = [UIImage imageNamed:@"left_whisky.png"];
-            
         }
+        
         if (State_right) {
             _vwEffect.image = [UIImage imageNamed:@"right_whisky.png"];
-           
         }
+        
         if(State_up){
             _vwEffect.image = [UIImage imageNamed:@"up_whisky.png"];
-           
         }
+        
         if (State_down) {
             _vwEffect.image = [UIImage imageNamed:@"down_whisky.png"];
-           
         }
+        
         if(State_loose){
             [self dismissViewControllerAnimated:false completion:^{
                 NSString *score = self->_timerExample7.text;
                 //    NSInteger *param = &(game_level);
                 NSString * str = @"Loose";
-
                 NSString *param = @"";
                 if(self->_game_level == 1){
                     param = @"simple";
@@ -225,7 +219,6 @@ bool State_loose = false;
                 }else if(self->_game_level ==  3){
                     param = @"training";
                 }
-
                 if (self.delegate != nil) {
                     [self.delegate getScore:score];
                     [self.delegate getString:str];
@@ -233,15 +226,14 @@ bool State_loose = false;
                 }
             }];
         }
-        
     }
+    
     CGFloat newR = R + 10 * accZ;
     self.ball.frame = CGRectMake(newX, newY, newR, newR);
 }
 
 - (instancetype)init
 {
-    
     return [super initWithNibName:NSStringFromClass(self.class) bundle:[NSBundle bundleForClass:self.class]];
 }
 
@@ -251,7 +243,6 @@ bool State_loose = false;
     [self setProgress:0.0f animated:YES];
     [self initRoundedFatProgressBar];
     
-    
     lastV = 0;
     time = 0;
     distance = 0;
@@ -260,8 +251,6 @@ bool State_loose = false;
     
     (void)(lastVx = 0), (void)(lastVy = 0), lastVz = 0;
     accCount = maxV = type = 0;
-    
-    
     
     for (int i = 0; i < 4; ++i){
         lastAx[i] = lastAy[i] = lastAz[i] = 0;
@@ -282,21 +271,18 @@ bool State_loose = false;
                                      [self outputAccelertion:data];
                                  }];
    
-    
     if (CGRectGetHeight([[UIScreen mainScreen] bounds]) <= 480) {
         _topViewHeight.constant = 0;
     }
     
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     if (devices.count > 1) {
-        
         if ([[TGCamera getOption:kTGCameraOptionHiddenToggleButton] boolValue] == YES) {
             _toggleButton.hidden = YES;
             _toggleButtonWidth.constant = 0;
         }
     }
     else {
-        
         if ([[TGCamera getOption:kTGCameraOptionHiddenToggleButton] boolValue] == YES) {
             _toggleButton.hidden = YES;
             _toggleButtonWidth.constant = 0;
@@ -362,8 +348,6 @@ bool State_loose = false;
     self.motionManager = [[CMMotionManager alloc] init]; self.motionManager.deviceMotionUpdateInterval = 1.0 / 60.0;
     
     [self.motionManager startDeviceMotionUpdatesUsingReferenceFrame: CMAttitudeReferenceFrameXArbitraryCorrectedZVertical];
-    
-    
     
     [super viewWillAppear:animated];
     
@@ -651,7 +635,6 @@ bool State_loose = false;
     NSLog(@"Complete %f", self->distance);
 //    NSString *distance = [NSString stringWithFormat:@"%@", distance];
     
-    
     [self dismissViewControllerAnimated:false completion:^{
         
         if (self.delegate != nil) {
@@ -663,8 +646,6 @@ bool State_loose = false;
         }
     }];
 }
-
-
 
 - (void)outputAccelertion:(CMDeviceMotion*)data
 {
@@ -683,7 +664,6 @@ bool State_loose = false;
     //filter the data
     [filter addAcceleration:accRef];
     
-    
     //add threshold
     accRef.x = (fabs(filter.x) < 0.01) ? 0 : filter.x;
     accRef.y = (fabs(filter.y) < 0.01) ? 0 : filter.y;
@@ -693,7 +673,6 @@ bool State_loose = false;
     accCount = (accCount+1)%4;
     
     lastAx[accCount] = accRef.x, lastAy[accCount] = accRef.y, lastAz[accCount] = accRef.z;
-    
     
     if (accCount == 3){
         lastVx += (lastAx[0]+lastAx[1]*3+lastAx[2]*3+lastAx[3]) * 0.125 * timeInterval * 3;
@@ -725,13 +704,11 @@ bool State_loose = false;
     if (lastV == 0 && bFirstTime) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            
             while (self->distance <= 20) {
-                
                 usleep(200000);
                 [self calculDistance];
-                
             }
+            
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSLog(@"Finished Dispatch");
                 
@@ -760,8 +737,6 @@ bool State_loose = false;
                     }
                 }];
             });
-            
-        
         });
         bFirstTime = false;
     }
@@ -769,17 +744,15 @@ bool State_loose = false;
     if (fabs(maxV) < fabs(lastV)){
         maxV = lastV;
     }
-
 //    NSLog(@"lastV;;;;%.2f m/s",lastV);
 //    NSLog(@"X-%f/ Y-%f/  Z-%f",accRef.x, accRef.y, accRef.z);
 //    NSLog(@"%.2f MAXZ",maxV);
-    
-    
 }
 
 -(void) valueChanged:(int)n{
     type = n;
 }
+
 -(void)calculDistance {
     
     timeCount += 0.2;
@@ -791,7 +764,6 @@ bool State_loose = false;
     progress = distance / 20 ;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self setProgress:self->progress animated:YES];
-        
         });
 //    NSLog(@" Speed;  %lf  Distance;;; %lf", lastV, progress);
 }

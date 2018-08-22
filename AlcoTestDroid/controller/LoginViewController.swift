@@ -100,37 +100,39 @@ class LoginViewController: UIViewController {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.white.cgColor
     }
+    
     func addPlaceHolder(Name: String, textfield: UITextField) {
-        
         let textAttributes = [
             NSAttributedStringKey.foregroundColor : UIColor.white,
             NSAttributedStringKey.font : UIFont.systemFont(ofSize: 17.0)]
             as [NSAttributedStringKey : Any]
         let placeHolder = NSAttributedString(string: Name,attributes:textAttributes)
-        
         textfield.attributedPlaceholder = placeHolder
     }
     
     @objc func tapSignin() {
         let email = tv_Email.text!
         let pass = tv_Password.text!
+        
         UserDefaults.standard.set("name", forKey: email)
         let str = "abc"
-        if(Invalide_Email(param1:email, param2:pass,param3: str)){
-//            let hudWait = MBProgressHUD.showAdded(to: self.view, animated: true)
-//            hudWait.label.text = "Please Wait.."
-            Auth.auth().signIn(withEmail: email, password: pass) {
-                (user, error) in
+        
+        if(Invalide_Email(param1:email, param2:pass, param3: str)){
+
+            Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                 if error == nil {
                     let ref = Database.database().reference().child("Users/users").child(Auth.auth().currentUser!.uid)
                     ref.updateChildValues(["email": email])
                     ref.updateChildValues(["password":pass])
+                    
                     UserDefaults.standard.set(email, forKey: "email")
                     UserDefaults.standard.set(pass, forKey: "password")
+                    
                     let expireDate : Date = Calendar.current.date(byAdding: .day, value: 30, to: Date())!
                     let dateformatter = DateFormatter()
                     dateformatter.dateFormat = "yyyy-MM-dd"
                     self.strExpireDate = dateformatter.string(from: expireDate)
+                    
                     ref.observe(DataEventType.value, with: {(snapshot) in
                         if snapshot.childrenCount > 0 {
                             for child in snapshot.children.allObjects as! [DataSnapshot] {
@@ -147,15 +149,12 @@ class LoginViewController: UIViewController {
                             UserDefaults.standard.set(self.strExpireDate, forKey: "expireDate")
                         }
                         self.dismiss(animated: false, completion: nil);
-//                        MBProgressHUD.hide(for: self.view, animated: false)
                     })
-                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     UserDefaults.standard.set("name", forKey: email)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
-//                  MBProgressHUD.hide(for: self.view, animated: false)
                 }
             }
         }
@@ -194,9 +193,10 @@ class LoginViewController: UIViewController {
                     ref.updateChildValues(["password":pass])
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
                     alertController.addAction(defaultAction)
+                    
                     self.present(alertController, animated: true, completion: nil)
 //                    MBProgressHUD.hide(for: self.view, animated: false)
                 }
@@ -219,7 +219,6 @@ class LoginViewController: UIViewController {
         }else if(param3.count == 0){
            alertShow(string: "Please Insert your Full Name!")
         }else{
-//            LogIn(email:param1, password: param2)
             if(param3 == "abc"){
                 ToastHelper.showToast(view: self.view, message: "Login Success!")
                 self.dismiss(animated: false, completion: nil)
@@ -248,6 +247,7 @@ class LoginViewController: UIViewController {
         }
         return false
     }
+    
     func alertShow(string:String){
         let alert = UIAlertController(title: "Warnning!", message: string, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
@@ -259,5 +259,4 @@ class LoginViewController: UIViewController {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
-    
 }

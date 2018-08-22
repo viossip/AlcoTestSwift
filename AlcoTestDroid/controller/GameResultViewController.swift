@@ -17,12 +17,21 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
     
     let defaults = UserDefaults.standard
     
-    public var game_Level:Int = 1;
+    var game_Level:Int = 0;
     var game_result:String = "aa";
     var distance:String = "";
     var score:String = "";
     var state:String = "";
     var level:String = "";
+    
+    public var gameLevel:Int {
+        set {
+            game_Level = newValue
+        }
+        get {
+            return game_Level
+        }
+    }
     
     let showEffect:Bool = false;
     
@@ -65,6 +74,7 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
                 self.setupRainLayer()
                 let birthRateAnimation = CABasicAnimation(keyPath: "birthRate")
                 birthRateAnimation.duration = 3
+                
                 if self.rainLayer.birthRate == 0 {
                     birthRateAnimation.fromValue = 0
                     birthRateAnimation.toValue = 1
@@ -82,14 +92,12 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
                 self.m_ivLoose.isHidden = false;
             }
         }
-        
-        
     }
 
-    
     private func getDistance(_ intDistance: String!) {
         distance = intDistance;
     }
+    
     internal func getScore(_ strScore: String!) {
         score = strScore;
         DispatchQueue.main.async{
@@ -246,13 +254,12 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
             gravityLayer.emitterCells = [cell, cell2]
             view.layer.addSublayer(gravityLayer)
         }
-        
     }
     
-   
     @objc func TapReturn(){
         self.dismiss(animated: false, completion: nil)
     }
+    
     @objc func TapAgain(){
         let cameraVC = TGCameraViewController(nibName: "TGCameraViewController", bundle: nil)
         if(level == "simple"){
@@ -267,7 +274,6 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
         m_ivLoose.isHidden = true;
         cameraVC.delegate = self;
         present(cameraVC, animated: false, completion: nil)
-    
     }
     
     func addTextBorder (textField: UITextField){
@@ -289,5 +295,4 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.white.cgColor
     }
-
 }
