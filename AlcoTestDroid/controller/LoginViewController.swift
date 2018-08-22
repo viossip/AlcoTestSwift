@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import IQKeyboardManagerSwift
 
-
 class LoginViewController: UIViewController {
     @IBOutlet weak var m_btnSignin: UIView!
     @IBOutlet weak var m_btnGetAccount: UIView!
