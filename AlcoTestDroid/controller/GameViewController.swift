@@ -142,6 +142,7 @@ class GameViewController: UIViewController{
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC") as! GameResultViewController
             //resultVC.game_Level = 1;
             resultVC.gameLevel = 1
+            UserDefaults.standard.set("1", forKey: "level")
             present(resultVC, animated: false, completion: nil)
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")
@@ -152,6 +153,7 @@ class GameViewController: UIViewController{
         if(clickable){
             let resultVC = storyboard?.instantiateViewController(withIdentifier: "resultVC")as! GameResultViewController
             resultVC.gameLevel = 2;
+            UserDefaults.standard.set("2", forKey: "level")
             present(resultVC, animated: false, completion: nil)
         }else{
             alertShow(string: "Please stay your Phone Horizontally!")

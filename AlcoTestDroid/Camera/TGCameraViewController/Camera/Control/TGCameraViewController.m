@@ -59,10 +59,7 @@ static double timeInterval  =  1.0/kUpdateFrequency;
     
     double distance;
     int time;
-    
 }
-
-
 
 @property (strong, nonatomic) IBOutlet UIView *captureView;
 @property (strong, nonatomic) IBOutlet UIImageView *topLeftView;
@@ -83,8 +80,6 @@ static double timeInterval  =  1.0/kUpdateFrequency;
 @property (weak, nonatomic) IBOutlet UIView *vwScopr;
 @property (weak, nonatomic) IBOutlet UIImageView *vwEffect;
 @property (nonatomic, assign) BOOL paused;
-
-
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *toggleButtonWidth;
@@ -132,8 +127,8 @@ float R = 40;
 
 float StableX = 0.004;
 float StableY = 0.004;
-float RotX = 0.05;
-float RotY = 0.05;
+float RotX = 0.1;
+float RotY = 0.1;
 
 float degree = 20;
 

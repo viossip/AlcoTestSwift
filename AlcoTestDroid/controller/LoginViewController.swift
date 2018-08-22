@@ -114,7 +114,8 @@ class LoginViewController: UIViewController {
         let email = tv_Email.text!
         let pass = tv_Password.text!
         
-        UserDefaults.standard.set("name", forKey: email)
+        //UserDefaults.standard.set("name", forKey: email)
+        UserDefaults.standard.set(email, forKey: "name")
         let str = "abc"
         
         if(Invalide_Email(param1:email, param2:pass, param3: str)){
@@ -143,7 +144,7 @@ class LoginViewController: UIViewController {
                                     self.strExpireDate = childObject?["expireDate"] as! String
                                     UserDefaults.standard.set("name", forKey: email)
                                     let uid = Auth.auth().currentUser?.uid
-                                    UserDefaults.standard.set("uid", forKey: uid!)
+                                    UserDefaults.standard.set(uid!, forKey: "uid")
                                 }
                             }
                             UserDefaults.standard.set(self.strExpireDate, forKey: "expireDate")

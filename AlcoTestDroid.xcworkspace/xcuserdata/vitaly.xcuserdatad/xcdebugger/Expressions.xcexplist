@@ -3,6 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "closure #1 in GameResultViewController.getScore(_:):GameResultViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UserDefaults.standard.string(forKey: &quot;uid&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "UserDefaults.standard.string(forKey: &quot;email&quot;)">
+            </PersistentString>
+            <PersistentString
+               value = "self.game_Level">
+            </PersistentString>
+            <PersistentString
+               value = "UserDefaults.standard">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GameResultViewController.gameLevel.setter:GameResultViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "HighScoreViewController.init(coder:):HighScoreViewController.swift">
          <PersistentStrings>
             <PersistentString

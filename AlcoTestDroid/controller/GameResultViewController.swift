@@ -14,10 +14,8 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
     
     private var rainLayer: CAEmitterLayer!
     private var gravityLayer: CAEmitterLayer!
-    
-    let defaults = UserDefaults.standard
-    
-    var game_Level:Int = 0;
+
+    var game_Level:Int = 1;
     var game_result:String = "aa";
     var distance:String = "";
     var score:String = "";
@@ -110,14 +108,14 @@ class GameResultViewController: UIViewController, TGCameraDelegate {
             self.ScoreView.text = "Your Score:" + self.score + "Sec";
             let name = UserDefaults.standard.string(forKey: "name")
             var type = ""
-            let uid = UserDefaults.standard.string(forKey: "uid")
+            //let uid = UserDefaults.standard.string(forKey: "uid")
             
             print(self.game_Level)
             print(name)
             
-            if(self.game_Level == 1) {
+            if(UserDefaults.standard.string(forKey: "level") == "1") {
                 type = "Simple"
-            }else if(self.game_Level == 2) {
+            }else {
                 type = "Advance"
             }
             
